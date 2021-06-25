@@ -39,7 +39,7 @@ function draw() {
     }
     
   }
-
+rabbit.x=mouse.x;
   drawSprites();
 }
 function spawnapples(){
