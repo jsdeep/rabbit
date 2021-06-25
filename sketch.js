@@ -29,7 +29,7 @@ function draw() {
   
   edges= createEdgeSprites();
   rabbit.collide(edges);
-  //rabbit.velocityX=mouse.X;
+  rabbit.X=World.mouse.X;
   var leorap=Math.round(random(1,2));
   if (frameCount%80===0){
     if (leorap===1){spawnapples();
@@ -39,7 +39,7 @@ function draw() {
     }
     
   }
-rabbit.x=mouse.x;
+
   drawSprites();
 }
 function spawnapples(){
