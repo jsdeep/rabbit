@@ -31,7 +31,7 @@ function draw() {
   rabbit.collide(edges);
   rabbit.x = World.mouseX;
   var leorap=Math.round(random(1,2));
-  if (frameCount%80===0){
+  if (frameCount%40===0){
     if (leorap===1){spawnapples();
     }
     else if(leorap===2){
@@ -44,7 +44,7 @@ function draw() {
 }
 function spawnapples(){
   
-  if(frameCount % 60===0){
+  if(frameCount % 30===0){
      apple= createSprite(random(50,350),40,10,10);
      apple.addImage(appleimg);
     apple.velocityY=4;
@@ -53,7 +53,7 @@ function spawnapples(){
   }
 }
  function leaves(){
-   if(frameCount % 60 ===0){
+   if(frameCount % 30 ===0){
     leave= createSprite(random(50,350),40,10,10);
     leave.addImage(leaveimg);
    leave.velocityY=4;
